@@ -5,7 +5,7 @@ function App() {
   const [page, setPage] = useState("home");
 
   const onHandleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setPage(event.target.dataset.name);
+    setPage((event.target as HTMLElement).dataset.name as string);
   };
 
   return (
