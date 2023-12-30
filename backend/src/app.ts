@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 require('express-async-errors');
 const cors = require('cors');
-const router = require('./Routes');
+const router = require('./routes');
 const errorMiddleware = require('./Middlewares/error');
 
 const app = express();

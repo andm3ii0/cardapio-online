@@ -1,16 +1,7 @@
-require('dotenv').config();
-
-const config = {
-  username: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD,
-  database: process.env.MYSQLDATABASE,
-  host: process.env.MYSQLHOST,
-  port: process.env.MYSQLPORT,
-  dialect: 'mysql',
-};
+const configs = require('./config.json')
 
 module.exports = {
-  development: config,
-  test: config,
-  production: config,
+  development: configs.development,
+  test: configs.test,
+  production: configs.production,
 };
